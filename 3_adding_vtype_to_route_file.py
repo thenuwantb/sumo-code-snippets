@@ -3,7 +3,7 @@ import os
 
 # Change the directory
 os.chdir(
-    'F:\\UOM\\SUMO\\sumo_python\\4_Bus_priority_lane\\5_Real_Network_Cross_Junc_Dehiwala\\5_0_Wife_laptop_bus_flows')
+    '<YOUR_FOLDER_PATH>')
 
 # function to assign the time interval, so that the data frame can be later filtered based on that value
 def assign_interval(number):
