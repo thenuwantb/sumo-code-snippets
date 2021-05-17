@@ -8,7 +8,6 @@ import numpy as np
 
 
 # functions
-
 def stopping_duration(bus_type, list_long_dist, list_short_dist):
     rand_int = np.random.randint(0, 99)
     if bus_type == "BUS_SD":
