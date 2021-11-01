@@ -13,6 +13,18 @@ You are most welcome to use thesee code snippets for your projects. If you need 
 
 This scripts is useful if you have actual counts at few edges of your network and you want to make a `.rou.xml` file that matches those counts. Here, the script `routeSampler.py` has been used.
 
+### 3.2. Generate Bus Flows with Random Stop Times
 
---- to be updated (last update - 24.05.2021)----
+Using static stop times at a bus stop are not realistic to use in a simulation. Here, I have tried to generate random stop times at a bus stop based on different types of busses. For example, in Sri Lanka, there are 1) Short Distance Busses, 2) Long Distance Busses, and 3) Other Busses (office transport etc.)
+
+### 3.3. Adding Vehicle Type to a Route File
+
+The idea of this script is to add vehicle type to a `rou.xml` as the route file doesn't have vehicle type in general (there is a method to do this if you have different percentages of modes - via an `.add.xml` file).
+
+In this script, the `.rou.xml` file is first converted in to a `.csv` file and then based on the time stamp (given that you have aggregated counts for 5 mins intervals + the vehicle type) a 'vehicle type' is allocated (in a random fashion) to the `.csv` file and convert the `.csv` back to an SUMO compaticle `.rou.xml` file.
+
+
+
+
+last update - 01.11.2021
 
